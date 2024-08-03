@@ -8,8 +8,8 @@ const page = () => {
   return (
     <main className=" w-full relative px-6 2xl:px-8  2xl:py-6 ">
       <Navbar />
-      <div className="flex flex-col md:flex-row items-start justify-between mb-10 gap-4 2xl:gap-6">
-        <div className=" relative w-full md:w-[75%] bg-primary overflow-hidden px-8 md:px-12 2xl:px-16 flex flex-col md:flex-row items-center justify-between  ">
+      <div className="flex md:h-[460px] 2xl:h-[600px] flex-col md:flex-row overflow-hidden items-start justify-between mb-10 gap-4 2xl:gap-6">
+        <div className=" h-full relative w-full md:w-[75%] bg-primary overflow-hidden px-8 md:px-12 2xl:px-16 flex flex-col md:flex-row items-center justify-between  ">
           <Image
             src="/bg1.png"
             alt="bg"
@@ -33,17 +33,18 @@ const page = () => {
               <MdArrowRightAlt className=" text-primary-50 2xl:text-3xl text-2xl" />
             </button>
           </div>
-          <div className=" z-10">
+          <div className=" z-10 flex h-full flex-col justify-end">
             <Image
               src="/hero.png"
               alt="hero"
+              priority
               width={600}
               height={600}
               className=" w-[250px] md:w-[300px]  2xl:w-[400px] "
             />
           </div>
         </div>
-        <div className="flex  flex-col items-center md:items-start gap-2.5 2xl:gap-6 w-full md:w-[25%] ">
+        <div className="flex  h-full flex-col items-center md:items-start gap-2.5 2xl:gap-6 w-full md:w-[25%] ">
           <div className="px-5 flex  flex-col items-center md:items-start  relative  w-full bg-primary">
             <Image
               src="/bg2.png"
@@ -66,7 +67,7 @@ const page = () => {
               818-558-4300{" "}
             </h2>
           </div>{" "}
-          <div className="px-5 flex  flex-col items-center md:items-start relative h-full w-full bg-primary">
+          <div className="px-5 flex   flex-col items-center md:items-start relative h-full w-full bg-primary">
             <Image
               src="/bg3.png"
               alt="bg"
