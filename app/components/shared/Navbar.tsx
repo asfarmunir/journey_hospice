@@ -14,7 +14,7 @@ import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <nav className="flex sticky top-0 z-50 py-4 bg-white  items-center  w-full justify-between">
+    <nav className="flex sticky top-0 z-50 py-4 px-6 bg-white  items-center  w-full justify-between">
       <Image
         src="/logo.png"
         alt="logo"

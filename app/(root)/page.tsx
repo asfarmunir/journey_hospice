@@ -6,9 +6,9 @@ import { service } from "@/lib/constants";
 
 const page = () => {
   return (
-    <main className=" w-full relative px-6 2xl:px-8  2xl:py-6 ">
+    <main className=" w-full relative   2xl:py-6 ">
       <Navbar />
-      <div className="flex md:h-[460px] 2xl:h-[600px] flex-col md:flex-row overflow-hidden items-start justify-between mb-10 gap-4 2xl:gap-6">
+      <div className="flex md:h-[460px] px-6 2xl:px-8 2xl:h-[600px] flex-col md:flex-row overflow-hidden items-start justify-between mb-10 gap-4 2xl:gap-6">
         <div className=" h-full relative w-full md:w-[75%] bg-primary overflow-hidden px-8 md:px-12 2xl:px-16 flex flex-col md:flex-row items-center justify-between  ">
           <Image
             src="/bg1.png"
@@ -92,7 +92,7 @@ const page = () => {
           </div>{" "}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-start justify-between my-16 px-4 md:px-9 2xl:px-14 2xl:my-20 gap-5 md:gap-10">
+      <div className="flex flex-col  md:flex-row items-start justify-between my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5 md:gap-10">
         <div className="flex flex-col w-full md:w-[60%]">
           <h2 className="text-3xl text-center md:text-start font-bold mb-4 text-primary-50">
             What is Hospice ?
@@ -163,8 +163,8 @@ const page = () => {
           </form>
         </div>
       </div>
-      <div className="flex flex-col  items-start  my-16 px-4 md:px-9 2xl:px-14 2xl:my-20 gap-5">
-        <p className="text-lg font-thin text-white bg-primary px-4 py-2">
+      <div className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5">
+        <p className="text-lg font-light text-white bg-primary px-4 py-2">
           Our services
         </p>
         <h2 className="text-3xl font-bold text-primary-50 mb-5">
@@ -248,14 +248,83 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center w-full mt-5">
-          <button className=" bg-primary w-fit p-3.5 2xl:p-3 px-5 2xl:px-6 text-white text-sm 2xl:text-base font-semibold inline-flex items-center gap-4">
-            View More Services
-            <MdArrowRightAlt className=" text-white 2xl:text-5xl text-3xl" />
-          </button>{" "}
-        </div>
       </div>
-      <div className="flex flex-col  items-start  my-16 px-4 md:px-9 2xl:px-14 2xl:my-20 gap-5">
+      <div className=" w-full relative">
+        <div className="flex flex-col w-full  md:w-[65%] 2xl:w-[72%]   items-start bg-primary py-16  my-16 px-4 md:px-28 2xl:px-56 2xl:my-20 gap-5">
+          <p className="  text-blue-800 bg-white px-4 py-2">About Us</p>
+          <h2 className="text-3xl font-bold text-white  ">
+            Here For You Always
+          </h2>
+          <p className=" text-white text-xs tracking-wide leading-loose maxw">
+            Journey hospice Services is a family-owned hospice center in Los
+            Angeles that offers quality end of life care. We now serve Burbank,
+            Pasadena, Los Angeles, and the surrounding communities. Meeting the
+            psychosocial needs of our patients is our priority. We provide
+            comfortable care 24/7 to our patients.
+          </p>
+          <ul className="flex flex-col list-none gap-3">
+            <li className=" flex text-white font-semibold text-sm gap-2 items-center ">
+              <Image
+                src="/tick.png"
+                alt="check"
+                width={30}
+                height={30}
+                className=" w-[20px]  "
+              />
+              <p>24/7 Telehealth</p>
+            </li>
+            <li className=" flex text-white font-semibold text-sm gap-2 items-center ">
+              <Image
+                src="/tick.png"
+                alt="check"
+                width={30}
+                height={30}
+                className=" w-[20px]  "
+              />
+              <p>24/7 Pharmacy Availability</p>
+            </li>
+            <li className=" flex text-white font-semibold text-sm gap-2 items-center ">
+              <Image
+                src="/tick.png"
+                alt="check"
+                width={30}
+                height={30}
+                className=" w-[20px]  "
+              />
+              <p>Durable Medical Equipments</p>
+            </li>
+            <li className=" flex text-white font-semibold text-sm gap-2 items-center ">
+              <Image
+                src="/tick.png"
+                alt="check"
+                width={30}
+                height={30}
+                className=" w-[20px]  "
+              />
+              <p>Medication Symptoms Managment</p>
+            </li>
+            <li className=" flex text-white font-semibold text-sm gap-2 items-center ">
+              <Image
+                src="/tick.png"
+                alt="check"
+                width={30}
+                height={30}
+                className=" w-[20px]  "
+              />
+              <p>Other Medical Supplies</p>
+            </li>
+          </ul>
+        </div>
+        <Image
+          src="/main.png"
+          alt="bg"
+          width={400}
+          height={400}
+          className=" hidden md:block absolute right-0 bottom-0 lg:w-[500px] "
+        />
+      </div>
+
+      <div className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5">
         <h2 className=" text-3xl  font-bold text-primary-50 text-center md:text-start mb-5 ">
           The Skilled Professionals Making A <br /> Difference At Journey
           Hospice Services
@@ -284,13 +353,46 @@ const page = () => {
             </div>
           </div>
         ))}
-        <div className="flex justify-center w-full mt-5">
-          <button className=" bg-primary w-fit p-3.5 2xl:p-3 px-5 2xl:px-6 text-white text-sm 2xl:text-base font-semibold inline-flex items-center gap-4">
-            View More Services
-            <MdArrowRightAlt className=" text-white 2xl:text-5xl text-3xl" />
-          </button>{" "}
-        </div>
       </div>
+      <div className=" w-full">
+        <Image
+          src="/map2.png"
+          alt="bg"
+          width={100}
+          height={100}
+          className=" w-full "
+        />
+      </div>
+      <footer className=" w-full bg-primary flex-wrap py-20 pb-32 px-4 md:px-12 2xl:px-16 2xl:py-24 lg:gap-5 flex justify-start gap-8 lg:justify-evenly ">
+        <div className="flex flex-col gap-2">
+          <h2 className=" text-lg font-bold text-white mb-3">Contact Us</h2>
+          <p className=" text-white font-light">
+            <span className=" mr-2">Address:{"  "}</span>
+            1234 Some Street, Los Angeles, <br /> CA 90001
+          </p>
+          <p className=" text-white font-light">
+            <span className=" mr-2">Phone:</span>
+            818-558-4300
+          </p>
+          <p className=" text-white font-light">
+            <span className=" mr-2"> Email:{"  "}</span>
+            xyz@gmail.info
+          </p>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h2 className=" text-lg font-bold text-white mb-3">Services</h2>
+          <p className=" text-white font-light">Consultaion</p>
+          <p className=" text-white font-light">Care Plans</p>
+          <p className=" text-white font-light">Pain Management </p>
+          <p className=" text-white font-light">24/7 Nursing Care</p>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h2 className=" text-lg font-bold text-white mb-3">Our Practices</h2>
+          <p className=" text-white font-light">About Us</p>
+          <p className=" text-white font-light">Contact Us</p>
+          <p className=" text-white font-light">Find A Location</p>
+        </div>
+      </footer>
     </main>
   );
 };
