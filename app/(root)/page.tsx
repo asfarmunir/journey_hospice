@@ -1,14 +1,19 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { MdArrowRightAlt } from "react-icons/md";
 import Navbar from "../components/shared/Navbar";
 import { service } from "@/lib/constants";
+import { scrollToSection } from "@/lib/constants";
 
 const page = () => {
   return (
     <main className=" w-full relative   2xl:py-6 ">
       <Navbar />
-      <div className="flex md:h-[460px] px-6 2xl:px-8 2xl:h-[600px] flex-col md:flex-row overflow-hidden items-start justify-between mb-10 gap-4 2xl:gap-6">
+      <div
+        id="home"
+        className="flex md:h-[460px] px-6 2xl:px-8 2xl:h-[600px] flex-col md:flex-row overflow-hidden items-start justify-between mb-10 gap-4 2xl:gap-6"
+      >
         <div className=" h-full relative w-full md:w-[75%] bg-primary overflow-hidden px-8 md:px-12 2xl:px-16 flex flex-col md:flex-row items-center justify-between  ">
           <Image
             src="/bg1.png"
@@ -92,7 +97,10 @@ const page = () => {
           </div>{" "}
         </div>
       </div>
-      <div className="flex flex-col  md:flex-row items-start justify-between my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5 md:gap-10">
+      <div
+        id="what-is-hospice"
+        className="flex flex-col  md:flex-row items-start justify-between my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5 md:gap-10"
+      >
         <div className="flex flex-col w-full md:w-[60%]">
           <h2 className="text-3xl text-center md:text-start font-bold mb-4 text-primary-50">
             What is Hospice ?
@@ -163,7 +171,10 @@ const page = () => {
           </form>
         </div>
       </div>
-      <div className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5">
+      <div
+        id="about-us"
+        className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5"
+      >
         <p className="text-lg font-light text-white bg-primary px-4 py-2">
           Our services
         </p>
@@ -249,7 +260,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className=" w-full relative">
+      <div id="service" className=" w-full relative">
         <div className="flex flex-col w-full  md:w-[65%] 2xl:w-[72%]   items-start bg-primary py-16  my-16 px-4 md:px-28 2xl:px-56 2xl:my-20 gap-5">
           <p className="  text-blue-800 bg-white px-4 py-2">About Us</p>
           <h2 className="text-3xl font-bold text-white  ">
@@ -324,7 +335,10 @@ const page = () => {
         />
       </div>
 
-      <div className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5">
+      <div
+        id="team"
+        className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5"
+      >
         <h2 className=" text-3xl  font-bold text-primary-50 text-center md:text-start mb-5 ">
           The Skilled Professionals Making A <br /> Difference At Journey
           Hospice Services
@@ -354,7 +368,7 @@ const page = () => {
           </div>
         ))}
       </div>
-      <div className=" w-full">
+      <div id="direction" className=" w-full">
         <Image
           src="/map2.png"
           alt="bg"
@@ -368,7 +382,7 @@ const page = () => {
           <h2 className=" text-lg font-bold text-white mb-3">Contact Us</h2>
           <p className=" text-white font-light">
             <span className=" mr-2">Address:{"  "}</span>
-            1234 Some Street, Los Angeles, <br /> CA 90001
+            500 E Olive Ave Suite: 710 <br /> Burbank CA 91501
           </p>
           <p className=" text-white font-light">
             <span className=" mr-2">Phone:</span>
@@ -376,7 +390,7 @@ const page = () => {
           </p>
           <p className=" text-white font-light">
             <span className=" mr-2"> Email:{"  "}</span>
-            xyz@gmail.info
+            Info@journeyhospiceservices.com
           </p>
         </div>
         <div className="flex flex-col gap-2">
@@ -388,9 +402,24 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h2 className=" text-lg font-bold text-white mb-3">Our Practices</h2>
-          <p className=" text-white font-light">About Us</p>
-          <p className=" text-white font-light">Contact Us</p>
-          <p className=" text-white font-light">Find A Location</p>
+          <button
+            onClick={() => scrollToSection("about-us")}
+            className="text-white text-start font-light"
+          >
+            About Us
+          </button>
+          <button
+            onClick={() => scrollToSection("what-is-hospice")}
+            className="text-white text-start font-light"
+          >
+            Contact Us
+          </button>
+          <button
+            onClick={() => scrollToSection("direction")}
+            className="text-white text-start font-light"
+          >
+            Find A Location
+          </button>
         </div>
       </footer>
     </main>

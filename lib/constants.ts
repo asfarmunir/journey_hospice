@@ -26,3 +26,17 @@ export const service  = [
     },
    
 ]
+
+export const scrollToSection = (section: string, offset = 100) => {
+  const el = document.getElementById(section);
+  console.log(section);
+  if (el) {
+    const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+};
