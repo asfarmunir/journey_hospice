@@ -31,7 +31,7 @@ const page = () => {
               className=" w-[70px] 2xl:w-[100px]  "
             />
             <h1 className="text-2xl  md:text-4xl 2xl:text-5xl text-center mb-3 md:mb-0 md:text-start text-[#20265B] font-bold max-w-lg leading-snug ">
-              Journey Hospice Services,Inc 
+              Journey Hospice Services, Inc 
               <br />
               Hand in Hand <br /> through the journey
             </h1>
