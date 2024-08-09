@@ -30,10 +30,10 @@ const page = () => {
               height={100}
               className=" w-[70px] 2xl:w-[100px]  "
             />
-            <h1 className="text-2xl capitalize md:text-4xl 2xl:text-5xl text-center mb-3 md:mb-0 md:text-start text-[#20265B] font-bold max-w-lg leading-snug ">
-              journey hospice services,
+            <h1 className="text-2xl  md:text-4xl 2xl:text-5xl text-center mb-3 md:mb-0 md:text-start text-[#20265B] font-bold max-w-lg leading-snug ">
+              Journey Hospice Services,
               <br />
-              inc Hand in hand <br /> through the journey
+              Inc Hand in Hand <br /> through the journey
             </h1>
             <button className=" bg-white p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-primary-50 w-fit text-base 2xl:text-lg font-semibold inline-flex items-center gap-5">
               Learn More
