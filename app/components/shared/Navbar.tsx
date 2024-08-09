@@ -122,7 +122,7 @@ const Navbar = () => {
       </Sheet>
 
       <button className=" bg-primary p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-white text-sm 2xl:text-base font-semibold hidden lg:inline-flex items-center gap-4">
-        Contace Us
+        Contact Us
         <MdArrowRightAlt className=" text-white 2xl:text-3xl text-xl" />
       </button>
     </nav>
