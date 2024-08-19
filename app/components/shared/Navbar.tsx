@@ -121,7 +121,10 @@ const Navbar = () => {
         </SheetContent>
       </Sheet>
 
-      <button className=" bg-primary p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-white text-sm 2xl:text-base font-semibold hidden lg:inline-flex items-center gap-4">
+      <button
+        onClick={() => scrollToSection("what-is-hospice")}
+        className=" bg-primary p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-white text-sm 2xl:text-base font-semibold hidden lg:inline-flex items-center gap-4"
+      >
         Contact Us
         <MdArrowRightAlt className=" text-white 2xl:text-3xl text-xl" />
       </button>
