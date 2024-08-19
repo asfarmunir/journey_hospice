@@ -5,6 +5,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import Navbar from "../components/shared/Navbar";
 import { service } from "@/lib/constants";
 import { scrollToSection } from "@/lib/constants";
+import ContactForm from "@/components/shared/ContactForm";
 
 const page = () => {
   return (
@@ -31,7 +32,7 @@ const page = () => {
               className=" w-[70px] 2xl:w-[100px]  "
             />
             <h1 className="text-2xl  md:text-4xl 2xl:text-5xl text-center mb-3 md:mb-0 md:text-start text-[#20265B] font-bold max-w-lg leading-snug ">
-              Journey Hospice Services, INC 
+              Journey Hospice Services, INC
               <br />
               Hand in Hand <br /> through the journey
             </h1>
@@ -118,60 +119,7 @@ const page = () => {
             it creates.
           </p>
         </div>
-        <div className="flex flex-col p-7 px-8 bg-[#F1F9FF] w-full md:w-[40%]">
-          <h2 className=" text-2xl 2xl:text-3xl mb-6 font-semibold text-primary-50">
-            Contact Us
-          </h2>
-          <form className="flex flex-col w-full gap-3.5">
-            <input
-              type="text"
-              className=" w-full border-2 text-sm bg-transparent border-slate-300 p-3 placeholder:text-primary-50 text-primary-50 "
-              placeholder="Full Name"
-              name=""
-              required
-              id=""
-            />
-            <input
-              type="text"
-              className=" w-full border-2 text-sm bg-transparent border-slate-300 p-3 placeholder:text-primary-50 text-primary-50 "
-              placeholder="Your Email"
-              name=""
-              required
-              id=""
-            />
-            <input
-              type="text"
-              className=" w-full border-2 text-sm bg-transparent border-slate-300 p-3 placeholder:text-primary-50 text-primary-50 "
-              placeholder="Phone Number"
-              name=""
-              required
-              id=""
-            />
-            <input
-              type="text"
-              className=" w-full border-2 text-sm bg-transparent border-slate-300 p-3 placeholder:text-primary-50 text-primary-50 "
-              placeholder="How did you hear about us?"
-              name=""
-              required
-              id=""
-            />
-            <input
-              type="text"
-              className=" w-full border-2 text-sm placeholder:text-primary-50 bg-transparent border-slate-300 p-3 text-primary-50 "
-              placeholder="About us?"
-              name=""
-              required
-              id=""
-            />
-            <button
-              type="submit"
-              className=" bg-primary p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-white text-sm 2xl:text-base font-semibold  w-fit inline-flex my-4 items-center gap-4"
-            >
-              Contact Us
-              <MdArrowRightAlt className=" text-white 2xl:text-3xl text-xl" />
-            </button>
-          </form>
-        </div>
+        <ContactForm />
       </div>
       <div
         id="about-us"

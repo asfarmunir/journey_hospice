@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "react-hot-toast";
 
 // import { Toaster } from "react-hot-toast";
 // import AuthSessionProvider from "@/lib/AuthSession";
@@ -39,7 +40,7 @@ export default function RootLayout({
           shadow="0 0 5px #2299DD,0 0 5px #2299DD"
         />
         {children}
-        {/* <Toaster position="bottom-center" /> */}
+        <Toaster position="top-center" />
       </body>
     </html>
   );
