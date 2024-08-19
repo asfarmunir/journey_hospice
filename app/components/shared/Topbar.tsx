@@ -3,6 +3,7 @@ import React from "react";
 import { MdArrowRightAlt } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
+import { scrollToSection } from "@/lib/constants";
 
 const Topbar = () => {
   return (
@@ -11,7 +12,10 @@ const Topbar = () => {
         <p className=" text-xs 2xl:text-sm font-thin text-white">
           We understand that each patient is unique
         </p>
-        <button className=" text-white text-sm 2xl:text-lg font-semibold inline-flex items-center gap-0.5">
+        <button
+          onClick={() => scrollToSection("what-is-hospice")}
+          className=" text-white text-sm 2xl:text-lg font-semibold inline-flex items-center gap-0.5"
+        >
           Learn More
           <MdArrowRightAlt className=" text-white 2xl:text-3xl text-xl" />
         </button>
@@ -21,10 +25,13 @@ const Topbar = () => {
           <FiPhone className=" text-white  2xl:text-xl" />
           <p className=" font-thin text-xs 2xl:text-base ">818-558-4300</p>
         </div>
-        <div className=" text-white  font-semibold inline-flex items-center gap-1">
+        <button
+          onClick={() => scrollToSection("direction")}
+          className=" text-white  font-semibold inline-flex items-center gap-1"
+        >
           <SlLocationPin className=" text-white  2xl:text-xl" />
           <p className=" font-thin text-xs 2xl:text-base ">Find Location</p>
-        </div>
+        </button>
       </div>
     </div>
   );

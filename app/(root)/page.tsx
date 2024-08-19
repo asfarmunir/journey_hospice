@@ -122,7 +122,7 @@ const page = () => {
         <ContactForm />
       </div>
       <div
-        id="about-us"
+        id="service"
         className="flex flex-col   items-start  my-16 px-4 md:px-12 2xl:px-16 2xl:my-20 gap-5"
       >
         <p className="text-lg font-light text-white bg-primary px-4 py-2">
@@ -210,7 +210,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div id="service" className=" w-full relative">
+      <div id="about-us" className=" w-full relative">
         <div className="flex flex-col w-full  md:w-[65%] 2xl:w-[72%]   items-start bg-primary py-16  my-16 px-4 md:px-28 2xl:px-56 2xl:my-20 gap-5">
           <p className="  text-blue-800 bg-white px-4 py-2">About Us</p>
           <h2 className="text-3xl font-bold text-white  ">
