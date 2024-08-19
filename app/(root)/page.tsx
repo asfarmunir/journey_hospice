@@ -8,7 +8,7 @@ import { scrollToSection } from "@/lib/constants";
 
 const page = () => {
   return (
-    <main className=" w-full relative   2xl:py-6 ">
+    <main className=" w-full relative   2xl:pt-6 ">
       <Navbar />
       <div
         id="home"
@@ -371,13 +371,21 @@ const page = () => {
         ))}
       </div>
       <div id="direction" className=" w-full">
-        <Image
+        {/* <Image
           src="/map2.png"
           alt="bg"
           width={100}
           height={100}
           className=" w-full "
-        />
+        /> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825.1274457378584!2d-118.30521959472156!3d34.184449098743954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2955222d00001%3A0x62ef1bc5bbc6da13!2s500%20E%20Olive%20Ave%20%23710%2C%20Burbank%2C%20CA%2091501%2C%20USA!5e0!3m2!1sen!2s!4v1724056342552!5m2!1sen!2s"
+          width="100%"
+          height="500"
+          style={{
+            border: 0,
+          }}
+        ></iframe>
       </div>
       <footer className=" w-full bg-primary flex-wrap py-20 pb-32 px-4 md:px-12 2xl:px-16 2xl:py-24 lg:gap-5 flex justify-start gap-8 lg:justify-evenly ">
         <div className="flex flex-col gap-2">
