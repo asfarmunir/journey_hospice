@@ -31,9 +31,9 @@ const page = () => {
               className=" w-[70px] 2xl:w-[100px]  "
             />
             <h1 className="text-2xl  md:text-4xl 2xl:text-5xl text-center mb-3 md:mb-0 md:text-start text-[#20265B] font-bold max-w-lg leading-snug ">
-              Journey Hospice Services,
+              Journey Hospice Services, INC 
               <br />
-              Inc Hand in Hand <br /> through the journey
+              Hand in Hand <br /> through the journey
             </h1>
             <button className=" bg-white p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-primary-50 w-fit text-base 2xl:text-lg font-semibold inline-flex items-center gap-5">
               Learn More
@@ -167,7 +167,7 @@ const page = () => {
               type="submit"
               className=" bg-primary p-2.5 2xl:p-3 px-3.5 2xl:px-4 text-white text-sm 2xl:text-base font-semibold  w-fit inline-flex my-4 items-center gap-4"
             >
-              Contace Us
+              Contact Us
               <MdArrowRightAlt className=" text-white 2xl:text-3xl text-xl" />
             </button>
           </form>
