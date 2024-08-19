@@ -68,16 +68,17 @@ const ContactForm = () => {
     e.preventDefault();
     if (validate()) {
       toast.loading("Sending message...");
-      const templateId = "template_ut72536";
-      const serviceId = "service_q3128yl";
-      const userId = "npmaJHicMVym9ucxU";
+
+      const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+      const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+      const userId = process.env.NEXT_PUBLIC_USER_ID;
 
       const templateParams = {
         ...formData,
       };
-      console.log("Form submitted successfully:", templateParams);
+      //   console.log("Form submitted successfully:", templateParams);
 
-      emailjs.send(serviceId, templateId, templateParams, userId).then(
+      emailjs.send(serviceId!, templateId!, templateParams, userId).then(
         function (response) {
           toast.dismiss();
           console.log("SUCCESS!", response.status, response.text);
